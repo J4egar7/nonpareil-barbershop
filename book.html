@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Chair — Nonpareil Barbershop, Copperas Cove TX</title>
+<meta name="description" content="Request a chair at Nonpareil Barbershop in Copperas Cove, TX. Pick a service, a barber, a day and a time. Walk-ins welcome, or call (254) 577-5515.">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pages.css">
+<link rel="stylesheet" href="forms.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230b0b0c'/><text y='74' x='50' text-anchor='middle' font-family='Arial Black,Arial' font-size='62' fill='%23e8b23a'>N</text></svg>">
+</head>
+<body class="grain">
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="index.html"><span class="pole" aria-hidden="true"></span><span class="nav__word">NONPAREIL<em>Barbershop</em></span></a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="barbers.html">The Chairs</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="visit.html">Visit</a>
+  </nav>
+  <div class="nav__actions">
+    <a class="btn btn--ghost" href="tel:+12545775515">(254) 577-5515</a>
+    <a class="btn btn--gold" href="book.html">Book Now</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="sheet" id="sheet">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="barbers.html">The Chairs</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="visit.html">Visit</a>
+  <a class="sheet__cta" href="book.html">Book a chair →</a>
+</div>
+
+<main>
+  <section class="pagehero pagehero--tight">
+    <div class="pagehero__bg"><img src="images/interior.jpg" alt=""></div>
+    <div class="pagehero__inner">
+      <p class="crumb"><a href="index.html">Home</a> / <span>Book</span></p>
+      <h1>Book your chair.</h1>
+      <p class="pagehero__lede">Four quick choices and you’re done. Pick a service, pick a barber, pick a time — or skip it all and walk in.</p>
+      <ul class="pagehero__meta">
+        <li>4.8★ from 184 reviews</li>
+        <li>Walk-ins welcome</li>
+        <li>Open Mon–Sat</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="psec psec--cream">
+    <div class="psec__inner bookwrap">
+
+      <form class="bookform" id="bookForm" novalidate>
+
+        <div class="fcard">
+          <h2 class="fcard__h"><span>01</span> Pick a service</h2>
+          <div class="chips chips--cols">
+            <input type="radio" id="sv1" name="service" value="Men’s Cut" data-price="30" checked>
+            <label for="sv1"><b>Men’s Cut</b><small>$30</small></label>
+
+            <input type="radio" id="sv2" name="service" value="Cut + Beard" data-price="40">
+            <label for="sv2"><b>Cut + Beard</b><small>$40</small></label>
+
+            <input type="radio" id="sv3" name="service" value="Kids Cut" data-price="30">
+            <label for="sv3"><b>Kids Cut</b><small>$30</small></label>
+
+            <input type="radio" id="sv4" name="service" value="Senior Cut" data-price="20">
+            <label for="sv4"><b>Senior Cut</b><small>$20</small></label>
+
+            <input type="radio" id="sv5" name="service" value="Clean Up" data-price="15">
+            <label for="sv5"><b>Clean Up</b><small>$15</small></label>
+
+            <input type="radio" id="sv6" name="service" value="Hot Towel Shave" data-price="">
+            <label for="sv6"><b>Hot Towel Shave</b><small>Ask</small></label>
+          </div>
+        </div>
+
+        <div class="fcard">
+          <h2 class="fcard__h"><span>02</span> Pick a barber</h2>
+          <div class="chips">
+            <input type="radio" id="bb0" name="barber" value="Any available" checked>
+            <label for="bb0">Any available</label>
+            <input type="radio" id="bb1" name="barber" value="Los">
+            <label for="bb1">Los</label>
+            <input type="radio" id="bb2" name="barber" value="Mark">
+            <label for="bb2">Mark</label>
+            <input type="radio" id="bb3" name="barber" value="JR DaVinci">
+            <label for="bb3">JR DaVinci</label>
+            <input type="radio" id="bb4" name="barber" value="Arthur Tovar">
+            <label for="bb4">Arthur Tovar</label>
+            <input type="radio" id="bb5" name="barber" value="Chan">
+            <label for="bb5">Chan</label>
+            <input type="radio" id="bb6" name="barber" value="Jay the Barber">
+            <label for="bb6">Jay the Barber</label>
+            <input type="radio" id="bb7" name="barber" value="Dez">
+            <label for="bb7">Dez</label>
+          </div>
+          <p class="hint">Don’t mind who? We’ll seat you with the first chair open.</p>
+        </div>
+
+        <div class="fcard">
+          <h2 class="fcard__h"><span>03</span> Pick a day &amp; time</h2>
+          <label class="field">
+            <span>Date</span>
+            <input type="date" id="bdate" name="date">
+          </label>
+          <div class="slots" id="slots" role="group" aria-label="Available times"></div>
+          <p class="hint">Monday–Friday 9 AM–5 PM · Saturday 8 AM–5 PM · Closed Sunday.</p>
+        </div>
+
+        <div class="fcard">
+          <h2 class="fcard__h"><span>04</span> Your details</h2>
+          <div class="fieldrow">
+            <label class="field"><span>Name</span><input type="text" id="bname" placeholder="Jordan Smith"></label>
+            <label class="field"><span>Phone</span><input type="tel" id="bphone" placeholder="(254) 555-0134"></label>
+          </div>
+          <label class="field"><span>Anything we should know?</span><textarea rows="3" placeholder="First time — thinking a low fade with a hard part."></textarea></label>
+        </div>
+
+        <button class="btn btn--gold btn--lg btn--full" type="submit">Request this time</button>
+        <p class="notice" id="notice" role="status"></p>
+        <p class="hint hint--center">
+          This page is a preview — it isn’t connected to the shop’s calendar yet.
+          To lock in a time today, call <a href="tel:+12545775515">(254) 577-5515</a> or use the
+          <a href="https://linktr.ee/nonpareilbarbershop" target="_blank" rel="noopener">live booking system</a>.
+        </p>
+      </form>
+
+      <aside class="summary">
+        <span class="summary__tag">Your request</span>
+        <h3 class="summary__h">Summary</h3>
+        <div class="summary__rows">
+          <div class="summary__row"><span>Service</span><b id="sumService">Men’s Cut</b></div>
+          <div class="summary__row"><span>Barber</span><b id="sumBarber">Any available</b></div>
+          <div class="summary__row"><span>Date</span><b id="sumDate">—</b></div>
+          <div class="summary__row"><span>Time</span><b id="sumTime">—</b></div>
+        </div>
+        <div class="summary__total"><span>Estimated</span><b id="sumPrice">$30</b></div>
+        <a class="btn btn--gold btn--full" href="https://linktr.ee/nonpareilbarbershop" target="_blank" rel="noopener">Book instantly ↗</a>
+        <a class="btn btn--ghost btn--full" href="tel:+12545775515">Call the shop</a>
+        <ul class="summary__list">
+          <li>Walk-ins always welcome</li>
+          <li>Card &amp; cash accepted</li>
+          <li>Free parking out front</li>
+          <li>Free Wi-Fi while you wait</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="psec psec--cream2">
+    <div class="psec__inner">
+      <div class="psec__head">
+        <p class="kicker reveal"><span>05</span> Rather not book?</p>
+        <h2 class="h2 reveal">Just walk in.</h2>
+        <p class="psec__lead reveal">Ten chairs and six days a week. Mornings and midweek are the quietest — Saturdays fill up fast.</p>
+      </div>
+      <div class="infocards">
+        <div class="infocard reveal"><h3>Open</h3><p>Mon–Fri 9–5 · Sat 8–5<br>Closed Sunday</p></div>
+        <div class="infocard reveal"><h3>Find us</h3><p>2518 E Business Hwy 190, Suite B<br>Copperas Cove, TX 76522</p><p style="margin-top:10px"><a href="https://www.google.com/maps/search/?api=1&amp;query=Nonpareil+Barbershop+2518+E+Business+Hwy+190+Copperas+Cove+TX" target="_blank" rel="noopener">Get directions →</a></p></div>
+        <div class="infocard reveal"><h3>Call</h3><p><a href="tel:+12545775515">(254) 577-5515</a><br><a href="mailto:jdabarber254@gmail.com">jdabarber254@gmail.com</a></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="band__inner">
+      <div>
+        <h2>Ready when you are.</h2>
+        <p>Book online in a minute, or call and we’ll tell you who’s free.</p>
+      </div>
+      <div class="band__actions">
+        <a class="btn btn--dark btn--lg" href="tel:+12545775515">Call the shop</a>
+        <a class="btn btn--lg" style="border:1.5px solid #141104" href="barbers.html">Meet the barbers</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <span class="nav__word nav__word--lg">NONPAREIL<em>Barbershop</em></span>
+      <p>Peerless cuts in Copperas Cove, Texas.<br>Family owned since 2021.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Shop</h4>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services &amp; prices</a>
+      <a href="barbers.html">The Chairs</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="book.html" class="is-active">Book a chair</a>
+      <a href="visit.html">Visit</a>
+    </div>
+    <div class="footer__col">
+      <h4>Visit</h4>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Nonpareil+Barbershop+2518+E+Business+Hwy+190+Copperas+Cove+TX" target="_blank" rel="noopener">Directions</a>
+      <a href="tel:+12545775515">(254) 577-5515</a>
+      <a href="mailto:jdabarber254@gmail.com">Email the shop</a>
+    </div>
+    <div class="footer__col">
+      <h4>Follow</h4>
+      <a href="https://www.facebook.com/p/Nonpareil-Barbershop-100067185666759" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://linktr.ee/nonpareilbarbershop" target="_blank" rel="noopener">Linktree</a>
+      <a href="https://booksy.com/en-us/1558352_nonpareil-barbershop_barber-shop_36479_copperas-cove" target="_blank" rel="noopener">Booksy</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year">2026</span> Nonpareil Barbershop · Copperas Cove, TX</span>
+    <span class="footer__tag">No equal in the 254.</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox"><button class="lightbox__close" aria-label="Close">×</button><img alt=""></div>
+<script src="script.js"></script>
+<script src="book.js"></script>
+</body>
+</html>
